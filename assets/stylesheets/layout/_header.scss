@@ -1,0 +1,56 @@
+.header-wrapper {
+    background-image: url(../../images/bg-preview-desktop.jpg);
+    height: 100vh;
+    width: 100vw;
+    
+    background-size: cover;
+}
+
+.header-menu-wrapper{
+    
+    display: flex;
+
+
+    background-color: transparentize($color_primary,0.7);
+    
+}
+
+.header-menu-inner-wrapper{
+    align-self: center;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 1440px;
+
+}
+
+.header-menu-logo-wrapper{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    display: flex;
+}
+
+
+
+.header-nav-wrapper{
+
+    grid-column-start: 5;
+    grid-column-end: 9;
+
+}
+
+.header-nav-list{
+    display: flex;
+    flex-direction: row;
+    
+    list-style: none;
+}
+
+.header-nav-item{
+    padding-left:24px;
+}
+
+.header-menu-button-wrapper{
+    grid-column-start: 10;
+    grid-column-end: 12;
+}
