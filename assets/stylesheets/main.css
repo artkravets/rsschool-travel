@@ -340,11 +340,18 @@ html {
   grid-column-end: 4;
   display: flex;
 }
+.header-menu-logo-wrapper .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 .header-menu-logo-wrapper .header-menu-name {
   margin-left: 15px;
   font-weight: 600;
   font-size: 32px;
   font-family: "Magra", sans-serif;
+  color: #FFFFFF;
 }
 
 .header-nav-wrapper {

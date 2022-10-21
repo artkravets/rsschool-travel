@@ -30,12 +30,21 @@
     grid-column-end: 4;
 
     display: flex;
+    
+    .link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
 
     .header-menu-name{
         margin-left:15px;
         font-weight: 600;
         font-size: 32px;
         font-family: $fontFamily_logo;
+        color: #FFFFFF;
+        
     }
 }
 
