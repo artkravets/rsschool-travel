@@ -1,4 +1,229 @@
-html {
-    font-family: 'Magra', sans-serif;
-    font-style: normal;
+
+
+.steps-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .steps-title{
+        font-family: $fontFamily_secondary;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 53px;
+        /* identical to box height */
+    
+    
+        color: $color_primary;
+        
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .steps-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 1177px;
+
+        
+
+        .steps-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .steps-card-img-wrapper{
+                background: $color_primary;
+                border-radius: 16px;
+    
+                width: 100px;
+                height: 100px;
+    
+                justify-content: center;
+                align-items: center;
+                display: flex;
+    
+                margin-bottom: 30px;
+            }
+
+            .steps-card-title{
+                font-family: $fontFamily_primary;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                
+        
+        
+                color: $color_secondary;
+            }
+        }
+    }
+
+
+   
+}
+
+
+
+.destinations{
+    margin-top:100px;
+
+    .destinations-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .destinations-title{
+            font-family: $fontFamily_secondary;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 53px;
+            /* identical to box height */
+        
+        
+            color: $color_primary;
+            
+            
+            margin-bottom: 50px;
+        }
+
+        .destinations-gallery{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 60px;
+
+            .gallery-cell {
+                width: 800px;
+                height: 800px;
+                border-radius: 16px;
+                display: flex;
+                    
+                    align-items: flex-end;
+                
+                &:nth-child(1){
+                    background: url(../../assets/images/destinations-1-desktop.jpg) #FFF;
+                  
+                }
+                &:nth-child(2){
+                    background: url(../../assets/images/destinations-2-desktop.jpg) #FFF;
+                }
+                &:nth-child(3){
+                    background: url(../../assets/images/destinations-3-desktop.jpg) #FFF;
+                }
+
+                .title{
+                    font-family: $fontFamily_primary;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 42px;
+
+                    color: #FFFFFF;
+                    
+                   
+
+                    margin-bottom: 40px;
+                    margin-left:15px;
+                }
+              }
+
+           
+        }
+
+       
+        //////////////////////
+        
+        .destinations-dots{
+            width: 50px;
+           display: flex;
+           flex-direction: row;
+           margin-top: 24px;
+           justify-content: center;
+           align-items: center;
+           column-gap: 5px;
+
+           .destinations-dot{
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            background-color: rgba(242, 120, 92, 0.5);;
+            border-radius: 5px;
+            cursor: pointer;
+           }
+        }
+        
+        .destinations-button{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 32px;
+            gap: 10px;
+
+            margin-top: 40px;
+
+
+            background: $color_secondary;
+            box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+            border-radius: 10px;
+
+
+            
+            font-family: $color_secondary;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height */
+            border: none;
+            cursor: pointer;
+
+            color: #FFFFFF;
+        }
+    }
+}
+
+.stories{
+    margin-top: 80px;
+
+    .stories-wrapper{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .stories-title{
+            font-family: $fontFamily_secondary;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 53px;
+            /* identical to box height */
+        
+        
+            color: $color_primary;
+            
+            
+            margin-bottom: 40px;
+        }
+
+        .stories-content-wrapper{
+            background: rgba(255, 255, 255, 0.7);
+            background-image: url(../../images/bg-stories-desktop.jpg);
+            
+            .stories-content{
+                width: 1200px;
+            }
+        }
+    }
 }
