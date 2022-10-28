@@ -313,7 +313,7 @@ html {
   overflow-x: hidden;
 }
 
-.header-wrapper {
+.l-screen__wrapper {
   background-image: url(../../assets/images/bg-preview-desktop.jpg);
   height: 100vh;
   width: 100vw;
@@ -321,32 +321,54 @@ html {
   background-size: cover;
 }
 
-.header-menu-wrapper {
+.l-menu__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(242, 120, 92, 0.3);
 }
 
-.header-menu-inner-wrapper {
+.l-menu__inner-wrapper {
   align-items: center;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   width: 1440px;
 }
+.l-menu__inner-wrapper .c-button__wrapper {
+  grid-column-start: 12;
+  grid-column-end: 13;
+  display: flex;
+  justify-content: flex-end;
+}
+.l-menu__inner-wrapper .c-button__wrapper .c-button {
+  width: 100px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #0D606F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  cursor: pointer;
+  border: 0;
+  font-family: "Red Hat Text", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
 
-.header-menu-logo-wrapper {
+.l-logo__wrapper {
   grid-column-start: 1;
   grid-column-end: 4;
   display: flex;
 }
-.header-menu-logo-wrapper .link {
+.l-logo__wrapper .c-menu__link {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
-.header-menu-logo-wrapper .header-menu-name {
+.l-logo__wrapper .c-menu__title {
   margin-left: 15px;
   font-weight: 600;
   font-size: 32px;
@@ -354,13 +376,13 @@ html {
   color: #FFFFFF;
 }
 
-.header-nav-wrapper {
+.l-nav__wrapper {
   grid-column-start: 5;
   grid-column-end: 10;
   display: flex;
   justify-content: center;
 }
-.header-nav-wrapper .header-nav {
+.l-nav__wrapper .c-nav {
   display: flex;
   justify-content: center;
   font-family: "Red Hat Text", sans-serif;
@@ -368,7 +390,8 @@ html {
   font-weight: 500;
   font-size: 16px;
 }
-.header-nav-wrapper .header-nav .header-nav-list {
+
+.c-nav__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -376,48 +399,27 @@ html {
   padding: 0 0;
   grid-gap: 42px;
 }
-.header-nav-wrapper .header-nav .header-nav-list .header-nav-link {
+.c-nav__list .c-nav__link {
   text-decoration: none;
   color: white;
   cursor: pointer;
 }
 
-.header-menu-button-wrapper {
-  grid-column-start: 10;
-  grid-column-end: 13;
-  display: flex;
-  justify-content: flex-end;
-  font-family: "Red Hat Text", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-}
-.header-menu-button-wrapper .header-menu-button {
-  padding: 10px 30px;
-  border-radius: 10px;
-  background-color: #0D606F;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-  color: white;
-  cursor: pointer;
-  border: 0;
-  font-family: "Red Hat Text", sans-serif;
-}
-
-.header-preview {
+.l-preview {
   display: flex;
   justify-content: center;
 }
-.header-preview .header-preview-wrapper {
+.l-preview .l-preview__wrapper {
   width: 1440px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 2fr 1fr;
 }
-.header-preview .header-preview-wrapper .header-preview-content {
+
+.c-preview__content {
   grid-area: 1/1/2/9;
 }
-.header-preview .header-preview-wrapper .header-preview-content .header-preview-title {
+.c-preview__content .c-title {
   font-family: "Aleo", serif;
   font-style: normal;
   font-weight: 700;
@@ -427,7 +429,7 @@ html {
   margin-top: 32px;
   margin-bottom: 56px;
 }
-.header-preview .header-preview-wrapper .header-preview-content .header-preview-text {
+.c-preview__content .c-text {
   font-family: "Aleo", serif;
   font-style: italic;
   font-weight: 700;
@@ -436,7 +438,8 @@ html {
   color: #FFFFFF;
   margin-bottom: 44px;
 }
-.header-preview .header-preview-wrapper .header-preview-content .header-preview-startPlanning {
+
+.c-start {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -447,7 +450,7 @@ html {
   border-radius: 16px;
   padding: 18px 18px 18px 41px;
 }
-.header-preview .header-preview-wrapper .header-preview-content .header-preview-startPlanning .header-preview-startPlanning-text {
+.c-start .c-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,13 +462,13 @@ html {
   color: #F2785C;
 }
 
-.footer {
+.l-footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   width: 1200px;
 }
-.footer .copyright {
+.l-footer .c-copyright {
   font-family: "Red Hat Text", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -479,7 +482,7 @@ html {
   grid-column-end: 9;
   margin: 20px 0px;
 }
-.footer .socialMedia {
+.l-footer .l-socialMedia {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
@@ -489,7 +492,7 @@ html {
   grid-column-end: 13;
 }
 
-.button-more {
+.c-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -510,36 +513,39 @@ html {
   color: #FFFFFF;
 }
 
-.steps-wrapper {
+.l-steps {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.steps-wrapper .steps-title {
+.l-steps .c-steps__title {
+  display: flex;
   font-family: "Red Hat Text", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 53px;
-  /* identical to box height */
   color: #F2785C;
   margin-top: 80px;
   margin-bottom: 40px;
+  justify-content: center;
 }
-.steps-wrapper .steps-content {
+
+.c-steps__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 1177px;
 }
-.steps-wrapper .steps-content .steps-card {
+.c-steps__content .c-steps__card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.steps-wrapper .steps-content .steps-card .steps-card-img-wrapper {
+
+.l-img__wrapper {
   background: #F2785C;
   border-radius: 16px;
   width: 100px;
@@ -549,7 +555,8 @@ html {
   display: flex;
   margin-bottom: 30px;
 }
-.steps-wrapper .steps-content .steps-card .steps-card-title {
+
+.c-card__title {
   font-family: "Aleo", serif;
   font-style: normal;
   font-weight: 400;
@@ -558,48 +565,48 @@ html {
   color: #0D606F;
 }
 
-.destinations {
+.l-destinations {
   margin-top: 100px;
 }
-.destinations .destinations-wrapper {
+.l-destinations .l-destinations__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.destinations .destinations-wrapper .destinations-title {
+.l-destinations .l-destinations__wrapper .c-destinations__title {
   font-family: "Red Hat Text", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 53px;
-  /* identical to box height */
   color: #F2785C;
   margin-bottom: 50px;
 }
-.destinations .destinations-wrapper .destinations-gallery {
+
+.c-destinations__gallery {
   display: flex;
   flex-direction: row;
   justify-content: center;
   column-gap: 60px;
 }
-.destinations .destinations-wrapper .destinations-gallery .gallery-cell {
+.c-destinations__gallery .c-gallery__cell {
   width: 800px;
   height: 800px;
   border-radius: 16px;
   display: flex;
   align-items: flex-end;
 }
-.destinations .destinations-wrapper .destinations-gallery .gallery-cell:nth-child(1) {
+.c-destinations__gallery .c-gallery__cell:nth-child(1) {
   background: url(../../assets/images/destinations-1-desktop.jpg) #FFF;
 }
-.destinations .destinations-wrapper .destinations-gallery .gallery-cell:nth-child(2) {
+.c-destinations__gallery .c-gallery__cell:nth-child(2) {
   background: url(../../assets/images/destinations-2-desktop.jpg) #FFF;
 }
-.destinations .destinations-wrapper .destinations-gallery .gallery-cell:nth-child(3) {
+.c-destinations__gallery .c-gallery__cell:nth-child(3) {
   background: url(../../assets/images/destinations-3-desktop.jpg) #FFF;
 }
-.destinations .destinations-wrapper .destinations-gallery .gallery-cell .title {
+.c-destinations__gallery .c-gallery__cell .c-title {
   font-family: "Aleo", serif;
   font-style: normal;
   font-weight: 500;
@@ -609,7 +616,8 @@ html {
   margin-bottom: 40px;
   margin-left: 15px;
 }
-.destinations .destinations-wrapper .destinations-dots {
+
+.l-destinations__nav {
   width: 50px;
   display: flex;
   flex-direction: row;
@@ -619,7 +627,8 @@ html {
   align-items: center;
   column-gap: 5px;
 }
-.destinations .destinations-wrapper .destinations-dots .destinations-dot {
+.l-destinations__nav .c-destinations__dot {
+  display: block;
   width: 10px;
   height: 10px;
   padding: 0;
@@ -628,24 +637,23 @@ html {
   cursor: pointer;
 }
 
-.stories {
+.l-stories {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.stories .stories-title {
+.l-stories .c-stories__title {
   font-family: "Red Hat Text", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 53px;
-  /* identical to box height */
   color: #F2785C;
   margin-bottom: 40px;
 }
-.stories .stories-wrapper {
+.l-stories .l-stories__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -654,43 +662,48 @@ html {
   background-size: cover;
   background-image: url(../../assets/images/bg-stories-desktop.jpg);
 }
-.stories .stories-wrapper .stories-wrapper-background {
+
+.l-wrapper__background {
   background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: screen;
   width: 100vw;
   padding-bottom: 40px;
 }
-.stories .stories-wrapper .stories-content-wrapper {
+
+.l-wrapper__content {
   padding-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.stories .stories-wrapper .stories-content-wrapper .stories-content {
+.l-wrapper__content .c-stories__content {
   width: 1200px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
   margin-bottom: 40px;
 }
-.stories .stories-wrapper .stories-content-wrapper .stories-content .stories-content-cell {
+
+.l-content__cell {
   display: flex;
   flex-direction: row;
   column-gap: 40px;
 }
-.stories .stories-wrapper .stories-content-wrapper .stories-content .stories-content-cell .cell-img {
-  filter: drop-shadow(0px 4px 4px #0D606F);
-  border-radius: 16px;
-}
-.stories .stories-wrapper .stories-content-wrapper .stories-content .stories-content-cell .cell-wrapper {
+.l-content__cell .l-content__wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 0px;
   color: #0D606F;
   font-family: "Aleo", serif;
 }
-.stories .stories-wrapper .stories-content-wrapper .stories-content .stories-content-cell .cell-wrapper .cell-title {
+
+.c-cell__img {
+  filter: drop-shadow(0px 4px 4px #0D606F);
+  border-radius: 16px;
+}
+
+.c-cell__title {
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -698,14 +711,16 @@ html {
   margin-bottom: 24px;
   margin-top: 0px;
 }
-.stories .stories-wrapper .stories-content-wrapper .stories-content .stories-content-cell .cell-wrapper .cell-text {
+
+.c-cell__text {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   margin: 0px 0px;
 }
-.stories .stories-wrapper .stories-content-wrapper .stories-content .stories-content-cell .cell-wrapper .cell-link {
+
+.c-cell__link {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

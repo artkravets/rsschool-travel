@@ -1,9 +1,9 @@
-.footer{
+.l-footer{
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     width: 1200px;
-    .copyright{
+    .c-copyright{
         font-family: $fontFamily_secondary;
         font-style: normal;
         font-weight: 500;
@@ -23,7 +23,7 @@
        
     }
 
-    .socialMedia{
+    .l-socialMedia{
         display: flex;
         flex-direction: row;
         column-gap: 20px;

@@ -1,192 +1,162 @@
-
-
-.steps-wrapper {
+.l-steps{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .steps-title{
+    .c-steps__title{
+        display: flex;
         font-family: $fontFamily_secondary;
         font-style: normal;
         font-weight: 500;
         font-size: 40px;
         line-height: 53px;
-        /* identical to box height */
-    
-    
         color: $color_primary;
-        
         margin-top: 80px;
         margin-bottom: 40px;
+        justify-content: center;
     }
-
-    .steps-content{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        width: 1177px;
-
-        
-
-        .steps-card{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-            .steps-card-img-wrapper{
-                background: $color_primary;
-                border-radius: 16px;
-    
-                width: 100px;
-                height: 100px;
-    
-                justify-content: center;
-                align-items: center;
-                display: flex;
-    
-                margin-bottom: 30px;
-            }
-
-            .steps-card-title{
-                font-family: $fontFamily_primary;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 24px;
-                
-        
-        
-                color: $color_secondary;
-            }
-        }
-    }
-
-
-   
 }
+.c-steps__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1177px;
 
-
-
-.destinations{
-    margin-top:100px;
-
-    .destinations-wrapper{
+    .c-steps__card{
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        }
+    }
 
-        .destinations-title{
-            font-family: $fontFamily_secondary;
+.l-img__wrapper{
+    background: $color_primary;
+    border-radius: 16px;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+    }
+
+.c-card__title{
+    font-family: $fontFamily_primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;     
+    color: $color_secondary;
+}
+   
+
+
+
+.l-destinations{
+    margin-top:100px;
+    .l-destinations__wrapper{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .c-destinations__title{
+        font-family: $fontFamily_secondary;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 53px;        
+        color: $color_primary;         
+        margin-bottom: 50px;
+       
+    }
+    }
+    
+        
+       
+           
+    }
+
+.c-destinations__gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 60px;
+    
+    .c-gallery__cell {
+        width: 800px;
+        height: 800px;
+        border-radius: 16px;
+        display: flex;              
+        align-items: flex-end;
+                    
+        &:nth-child(1){
+            background: url(../../assets/images/destinations-1-desktop.jpg) #FFF;              
+        }
+        &:nth-child(2){
+            background: url(../../assets/images/destinations-2-desktop.jpg) #FFF;
+        }
+        &:nth-child(3){
+            background: url(../../assets/images/destinations-3-desktop.jpg) #FFF;
+        }
+    
+        .c-title{
+            font-family: $fontFamily_primary;
             font-style: normal;
             font-weight: 500;
-            font-size: 40px;
-            line-height: 53px;
-            /* identical to box height */
-        
-        
-            color: $color_primary;
-            
-            
-            margin-bottom: 50px;
+            font-size: 32px;
+            line-height: 42px;
+            color: #FFFFFF;
+            margin-bottom: 40px;
+            margin-left:15px;
         }
-
-        .destinations-gallery{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            column-gap: 60px;
-
-            .gallery-cell {
-                width: 800px;
-                height: 800px;
-                border-radius: 16px;
-                display: flex;
-                    
-                    align-items: flex-end;
-                
-                &:nth-child(1){
-                    background: url(../../assets/images/destinations-1-desktop.jpg) #FFF;
-                  
-                }
-                &:nth-child(2){
-                    background: url(../../assets/images/destinations-2-desktop.jpg) #FFF;
-                }
-                &:nth-child(3){
-                    background: url(../../assets/images/destinations-3-desktop.jpg) #FFF;
-                }
-
-                .title{
-                    font-family: $fontFamily_primary;
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 32px;
-                    line-height: 42px;
-
-                    color: #FFFFFF;
-                    
-                   
-
-                    margin-bottom: 40px;
-                    margin-left:15px;
-                }
-              }
-
-           
-        }
-
-       
-        //////////////////////
-        
-        .destinations-dots{
-            width: 50px;
-           display: flex;
-           flex-direction: row;
-           margin-top: 24px;
-           margin-bottom: 40px;
-           justify-content: center;
-           align-items: center;
-           column-gap: 5px;
-
-           .destinations-dot{
-            width: 10px;
-            height: 10px;
-            padding: 0;
-            background-color: rgba(242, 120, 92, 0.5);;
-            border-radius: 5px;
-            cursor: pointer;
-           }
-        }
-        
-       
     }
 }
 
-.stories{
+.l-destinations__nav{
+    width: 50px;
+   display: flex;
+   flex-direction: row;
+   margin-top: 24px;
+   margin-bottom: 40px;
+   justify-content: center;
+   align-items: center;
+   column-gap: 5px;
+
+   .c-destinations__dot{
+    display: block;
+    
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    background-color: rgba(242, 120, 92, 0.5);;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+}
+
+
+.l-stories{
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .stories-title{
+
+    .c-stories__title{
         font-family: $fontFamily_secondary;
         font-style: normal;
         font-weight: 500;
         font-size: 40px;
         line-height: 53px;
-        /* identical to box height */
-    
-    
         color: $color_primary;
-        
-        
         margin-bottom: 40px;
     }
-    .stories-wrapper{
 
+    .l-stories__wrapper{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -194,85 +164,79 @@
         width: 100vw;
         background-size: cover;
         background-image: url(../../assets/images/bg-stories-desktop.jpg);
+    }      
+}
+
+.l-wrapper__background{
+    background-color: rgba(255, 255, 255, 0.7);
+background-blend-mode: screen;
+width: 100vw;
+padding-bottom: 40px;
+}
+
+.l-wrapper__content{
+   
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
         
-
-        
-
-        .stories-wrapper-background{
-            background-color: rgba(255, 255, 255, 0.7);
-        background-blend-mode: screen;
-        width: 100vw;
-        padding-bottom: 40px;
-        }
-
-        .stories-content-wrapper{
-           
-            padding-top: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            
-            
-            .stories-content{
-                width: 1200px;
-                display: flex;
-                flex-direction: column;
-                row-gap: 30px;
-                margin-bottom: 40px;
-
-                .stories-content-cell{
-                    display: flex;
-                    flex-direction: row;
-                    column-gap: 40px;
-
-                    .cell-img{
-                        filter: drop-shadow(0px 4px 4px $color_secondary);
-                        border-radius: 16px;
-                    }
-
-                    .cell-wrapper{
-                        display: flex;
-                        flex-direction: column;
-                        row-gap: 0px;
-
-                        color:$color_secondary;
-                        font-family: $fontFamily_primary;
-
-                        .cell-title{
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 35px;
-                            line-height: 42px;
-                            margin-bottom: 24px;
-                            margin-top: 0px;
-                        }
-
-                        .cell-text{
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 20px;
-                            line-height: 24px;
-                            margin: 0px 0px;
-
-                        }
-                        .cell-link{
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 20px;
-                            line-height: 24px;
-                            padding: 0px 0px;
-                            margin: 0px 0px;
-                            color: $color_secondary;
-
-                        }
-                        
-                    }
-                }
-
-                
-            }
-        }
+    .c-stories__content{
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 40px;        
     }
 }
+
+.l-content__cell{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+
+    .l-content__wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+        color:$color_secondary;
+        font-family: $fontFamily_primary;     
+    }
+}
+
+.c-cell__img{
+    filter: drop-shadow(0px 4px 4px $color_secondary);
+    border-radius: 16px;
+}
+
+.c-cell__title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 24px;
+    margin-top: 0px;
+}
+
+.c-cell__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0px 0px;
+
+}
+
+.c-cell__link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    color: $color_secondary;
+
+}
+
 
