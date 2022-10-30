@@ -25,4 +25,10 @@
     cursor: pointer;
 
     color: #FFFFFF;
+
+
+    &:hover{
+        background-color: $color_primary;
+        transition: .125s linear;
+    }
 }

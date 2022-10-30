@@ -311,6 +311,7 @@ template {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .l-screen__wrapper {
@@ -355,6 +356,10 @@ html {
   font-weight: 500;
   font-size: 16px;
   color: white;
+}
+.l-menu__inner-wrapper .c-button__wrapper .c-button:hover {
+  background-color: #F2785C;
+  transition: 0.125s linear;
 }
 
 .l-logo__wrapper {
@@ -511,6 +516,10 @@ html {
   border: none;
   cursor: pointer;
   color: #FFFFFF;
+}
+.c-button:hover {
+  background-color: #F2785C;
+  transition: 0.125s linear;
 }
 
 .l-steps {
