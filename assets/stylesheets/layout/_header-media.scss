@@ -24,8 +24,7 @@
       
       .l-menu__inner-wrapper{
 
-      display: flex;
-	    justify-content: space-between;
+      
       padding: 0 0;
       margin: 0 0;
       
@@ -39,9 +38,8 @@
       }
       
       .l-logo__wrapper{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        display: flex;
+        
+        
           
         .c-menu__link{
           display: flex;
@@ -58,6 +56,8 @@
       
       .l-nav__wrapper{
         
+        grid-column-start: 12;
+        grid-column-end: 13;
       
         .c-nav{
           display: none;

@@ -1,26 +1,17 @@
-function burgerMenu(selector) {
-    let menu = $(selector);
-    let button = menu.find('.burger-menu_button', '.burger-menu_lines');
-    let links = menu.find('.burger-menu_link');
-    let overlay = menu.find('.burger-menu_overlay');
-    
-    button.on('click', (e) => {
-      e.preventDefault();
-      toggleMenu();
-    });
-    
-    links.on('click', () => toggleMenu());
-    overlay.on('click', () => toggleMenu());
-    
-    function toggleMenu(){
-      menu.toggleClass('burger-menu_active');
-      
-      if (menu.hasClass('burger-menu_active')) {
-        $('body').css('overlow', 'hidden');
-      } else {
-        $('body').css('overlow', 'visible');
-      }
-    }
-  }
-  
-  burgerMenu(document.getElementsByClassName('burger-menu'));
+let burger_menu__open = document.getElementById('bg-menu__open');
+let bg_menu = document.getElementById('bg-menu');
+let bg_menu__close = document.getElementById('bg-menu__close');
+
+burger_menu__open.onclick = function(){
+  burger_menu__open.style.display = 'none';
+  bg_menu.style.display = 'flex';
+
+
+}
+
+bg_menu__close.onclick = function(){
+  burger_menu__open.style.display = 'flex';
+  bg_menu.style.display = 'none';
+
+
+}
