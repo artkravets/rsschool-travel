@@ -688,6 +688,7 @@ html {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 32px;
+    display: flex;
   }
   .l-burger-menu .c-burger-menu__nav {
     display: none;
@@ -725,6 +726,14 @@ html {
     margin-top: 10px;
   }
 }
+.c-burger-menu__nav {
+  display: none;
+}
+
+.c-burger-menu__button {
+  display: none;
+}
+
 .l-steps {
   display: flex;
   flex-direction: column;
