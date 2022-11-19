@@ -1,0 +1,24 @@
+@media screen and (max-width: $breakpoint_mobile) {
+.l-footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .c-copyright{
+       display: none;
+       
+    }
+
+    .l-socialMedia{
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        
+
+    }
+}
+}

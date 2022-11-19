@@ -32,3 +32,31 @@
         transition: .125s linear;
     }
 }
+
+@media screen and (max-width: $breakpoint_mobile) {
+    .c-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 8px;
+        gap: 6px;
+
+        background: $color_secondary;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 15px;
+        width: 92px;
+
+        
+    }
+    .c-button__img{
+        width:16px; /* you can use % */
+        height: auto;
+        margin: 0 0;
+    }
+
+}    

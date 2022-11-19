@@ -17,15 +17,19 @@
 // 4. Layout-related sections
 @import
 'layout/header',
-'layout/footer';
+'layout/footer',
+'layout/footer-media',
+'layout/header-media';
 
 // 5. Components
 @import
-'components/button';
+'components/button',
+'components/burger-menu-media';
 
 // 6. Page-specific styles
 @import
-'pages/home';
+'pages/home',
+'pages/home-media';
 
 // 7. Themes
 @import
